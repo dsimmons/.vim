@@ -32,6 +32,13 @@ set shiftround               " Round indent to a multiple of `shiftwidth`.
 set tabstop=2                " Number of columns a <Tab> counts for (actual, how 'big' a tab is).
 set softtabstop=2            " Number of columns Vim uses when <Tab> is hit. 'Feels' like a real tab, but might be a combination of tabs and spaces.
 
+" ================ Input ============================
+" This is so that, for example, having left INSERT mode by pressing <ESC>,
+" there's not a delay when doing something like SHIFT+O (in this case, to
+" re-enter INSERT mode on the line above).
+set ttimeout                 " Enable tweaking the ~1s wait separately for key codes and mappings.
+set ttimeoutlen=100          " For key codes specifically, only wait 100ms between key presses.
+
 " ================ Search ===========================
 set incsearch                " Find the next match as we type the search.
 set hlsearch                 " Highlight searches by default.
