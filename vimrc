@@ -15,6 +15,10 @@ set scrolloff=2              " Keep at least 2 lines (offset) visible above and 
 set sidescrolloff=5          " Same as scrolloff, horizontally. For off-screen text.
 set nowrap                   " Don't wrap text, extend off-screen.
 
+if v:version > 703 || v:version == 703 && has("patch541")
+  set formatoptions+=j       " When joining commented lines, delete comment chars no longer necessary.
+endif
+
 " ================ Visual ===========================
 set showcmd                  " Show partial commands as they're being typed.
 set showmode                 " Show visual indication of having changed modes in the statusline.
