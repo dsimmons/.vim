@@ -64,4 +64,14 @@ set splitbelow               " When :sp, place new window below the current.
 set wildmenu                 " When <Tab> is pressed on the command-line, show possible matches.
 set wildmode=list:longest    " List all matches & complete to longest substr.
 
+" As of Vim >= 6.0, the plugin matchit.vim is included but not enabled.
+"
+" matchit.vim greatly improves/extends the functionality of % to match things
+" like HTML opening/closing tags, regular expressions, etc....
+"
+" Enable it, but only if the user hasn't installed a newer version already.
+if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
+  runtime! macros/matchit.vim
+endif
+
 " vim:set ft=vim et sw=2:
