@@ -49,6 +49,11 @@ set hlsearch                 " Highlight searches by default.
 set ignorecase               " Ignore case when searching...
 set smartcase                " ...unless we type a capital letter.
 
+" In normal mode, clear hlsearch (search highlighting) with <ESC>.
+" Because we're using :nohlsearch (as opposed to :set nohlsearch), the
+" highlighting is automatically re-enabled on subsequent searches.
+:nnoremap <silent> <esc> :nohlsearch<Return><ESC>
+
 " ================ Buffers ==========================
 set autoread                 " Reload files changed outside of Vim.
 set hidden                   " Allow switching buffers with pending changes.
