@@ -1,3 +1,7 @@
+" Enable Pathogen, and let it manage itself.
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 if has('autocmd')
   filetype plugin indent on  " Turn on file type detection.
 endif
