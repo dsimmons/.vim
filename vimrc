@@ -69,6 +69,13 @@ set noswapfile               " Swapfiles are rarely useful and just clutter thin
 set splitright               " When :vsp, place new window to the right of the current.
 set splitbelow               " When :sp, place new window below the current.
 
+" Make moving between split windows easier.
+" eg. <CTRL+W><H> ===> <CTRL+H>
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
+
 " ================ Command-line Completion ==========
 set wildmenu                 " When <Tab> is pressed on the command-line, show possible matches.
 set wildmode=list:longest    " List all matches & complete to longest substr.
