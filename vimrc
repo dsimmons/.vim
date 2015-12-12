@@ -31,6 +31,11 @@ set number                   " Show current line numbers.
 set relativenumber           " Relative line numbers for super fast motions (because math is hard).
 set laststatus=2             " 2 == always show the status line
 
+" Enable list mode (visual listchars, below) by default.
+" While we're at it, let's improve the default listchars.
+set list
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+
 " ================ Indentation ======================
 set autoindent               " When starting a new line, infer indentation from the current line.
 set smartindent              " Smart indenting when starting a new line (eg. align with opening bracket).
