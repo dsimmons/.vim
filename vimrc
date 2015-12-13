@@ -27,7 +27,6 @@ endif
 set showcmd                  " Show partial commands as they're being typed.
 set showmode                 " Show visual indication of having changed modes in the statusline.
 set ruler                    " Show current line and cursor position.
-set number                   " Show current line numbers.
 set relativenumber           " Relative line numbers for super fast motions (because math is hard).
 set laststatus=2             " 2 == always show the status line
 
