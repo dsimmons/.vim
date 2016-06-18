@@ -31,3 +31,6 @@
 [submodule "bundle/vim-sexp-mappings-for-regular-people"]
 	path = bundle/vim-sexp-mappings-for-regular-people
 	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat
