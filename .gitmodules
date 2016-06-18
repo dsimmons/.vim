@@ -25,3 +25,9 @@
 [submodule "bundle/rainbow-parens"]
 	path = bundle/rainbow-parens
 	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "bundle/vim-sexp"]
+	path = bundle/vim-sexp
+	url = https://github.com/guns/vim-sexp
+[submodule "bundle/vim-sexp-mappings-for-regular-people"]
+	path = bundle/vim-sexp-mappings-for-regular-people
+	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
